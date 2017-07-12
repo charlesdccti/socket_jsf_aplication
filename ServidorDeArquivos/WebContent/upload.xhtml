@@ -1,0 +1,52 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+
+<ui:composition template="/template.xhtml">
+
+
+
+    <ui:define name="header">
+    
+        
+        	<h:form enctype="multipart/form-data">
+	
+			    <p:fileUpload fileUploadListener="#{fileUploadController.handleFileUpload}"
+			            mode="advanced"
+			            update="messages"     
+			            sizeLimit="10000000" 
+			            allowTypes="/(\.|\/)(gif|jpg|png|txt|rmvb|mp4|pdf|docx)$/"/>
+			
+			    <p:growl id="messages" showDetail="true"/>
+	
+			</h:form>
+			
+        
+    </ui:define>
+
+
+
+	<ui:define name="content">
+
+		<div id="conteudoCentral" align="left">			
+				 
+			<br />
+			<br />
+			<h:form id="form">
+			<img src="RepositorioDeArquivos/ufba.jpg" width="200" height="300" />
+			<!-- 	<p:media value="RepositorioDeArquivos/logo-ufba.jpg" width="420" height="315" player="flash"/>  -->
+			</h:form>  
+		</div>
+		
+		<br />
+		<br />
+		<br />
+	</ui:define>
+
+
+
+</ui:composition>
+</html>

@@ -1,0 +1,34 @@
+SOCKET :  Socket ou soquete é apenas um conceito ou uma abstração. O termo socket é utilizado 
+para  representar um ponto de conexão para uma rede de computadores que utiliza o protocolo
+TCP/IP. Quando dois computadores necessitam manter uma comunicação, cada um deles
+utiliza um socket.
+
+TCP : O TCP é um protocolo de nível da camada de transporte (camada 4) do Modelo OSI e é sobre 
+o qual  que se assentam a maioria das aplicações cibernéticas, como o SSH, FTP, HTTP.
+
+Orientado à conexão - A aplicação envia um pedido de conexão para o destino e usa a "conexão" 
+para transferir dados.
+Ponto a ponto - uma conexão TCP é estabelecida entre dois pontos.
+Confiabilidade e- O TCP usa várias técnicas para proporcionar uma entrega confiável dos 
+pacotes de dados, que é a grande vantagem que tem em relação ao UDP, e motivo do seu uso 
+extensivo nas redes de computadores. O TCP permite a recuperação de pacotes perdidos, a 
+eliminação de pacotes duplicados, a recuperação de dados corrompidos, e pode recuperar a 
+ligação em caso de problemas no sistema e na rede.
+Full duplex - É possível a transferência simultânea em ambas direções (cliente-servidor) 
+durante toda a sessão.
+Handshake - Mecanismo de estabelecimento e finalização de conexão a três e quatro tempos, 
+respectivamente, o que permite a autenticação e encerramento de uma sessão completa. O TCP 
+garante que, no final da conexão, todos os pacotes foram bem recebidos.
+Entrega ordenada - A aplicação faz a entrega ao TCP de blocos de dados com um tamanho 
+arbitrário num fluxo (ou stream) de dados, tipicamente em octetos. O TCP parte estes 
+dados em segmentos de tamanho especificado pelo valor MTU. Porém, a circulação dos pacotes 
+ao longo da rede (utilizando um protocolo de encaminhamento, na camada inferior, como o IP)
+pode fazer com que os pacotes não cheguem ordenados. O TCP garante a reconstrução do stream 
+no destinatário mediante os números de sequência.
+Controle de fluxo - O TCP usa o campo janela ou window para controlar o fluxo. O receptor, 
+à medida que recebe os dados, envia mensagens ACK (=Acknowledgement), confirmando a recepção
+de um segmento; como funcionalidade extra, estas mensagens podem especificar o tamanho máximo 
+do buffer no campo (janela) do segmento TCP, determinando a quantidade máxima de bytes aceita
+pelo receptor. O transmissor pode transmitir segmentos com um número de bytes que deverá 
+estar confinado ao tamanho da janela permitido: o menor valor entre sua capacidade de 
+envio e a capacidade informada pelo receptor.

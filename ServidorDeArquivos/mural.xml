@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<posts>
+	<post>
+		<description>post sobre a google</description>
+		<id>1</id>
+		<state>true</state>
+		<title>A google</title>
+		<user>
+			<email>charlesdccti@gmail.com</email>
+			<id>100</id>
+			<name>charles feerreira</name>
+		</user>
+	</post>
+	<post>
+		<description>post sobre a facebook</description>
+		<id>2</id>
+		<state>true</state>
+		<title>O facebook</title>
+		<user>
+			<email>renatodccti@gmail.com</email>
+			<id>101</id>
+			<name>Renato silva</name>
+		</user>
+	</post>
+</posts>
